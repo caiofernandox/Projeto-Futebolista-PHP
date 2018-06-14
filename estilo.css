@@ -1,0 +1,67 @@
+#body{
+   background-image: url(imgFundo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 1200px;
+    background-size: cover;
+    display: block;
+    position: absolute;
+	overflow-x: hidden;
+}
+#cadastro{
+	display: block;
+    position: absolute;
+    margin: 20% 0px 0 40%;
+    font-size: 50px;
+    text-align: left;
+}
+input{
+	float: right;
+    height: 26px;
+    width: -webkit-fill-available;
+}
+#infCadastro{
+	display:block;
+	position:relative;
+}
+#titulo{
+	    font-size: 80px;
+    text-align: center;
+    margin: 0 0px 0 47%;
+}
+#descricao{
+margin: 10% 0 0 266px;
+    padding: 14px;
+    font-size: 21px;
+    display: block;
+    text-align: left;
+    border-radius: 5px;
+    width: 408px;
+    opacity: 0.6;
+    background: black;
+    color: white;
+    height: auto;
+    float: left;
+}
+#login{
+    font-size: 20px;
+    background: black;
+    text-align: left;
+    margin: 12% 0% 0px 71%;
+    float: right;
+    position: absolute;
+    opacity: 0.6;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#link{
+    margin: 72px 0 0 56px;
+    font-size: 18px;
+    color: white;
+    width: auto;
+    height: auto;
+    display: block;	
+
+}
