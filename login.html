@@ -1,32 +1,54 @@
-<html>
+﻿<html>
     <head>
-        <title>FutBolistico</title>
+        <title>Futebolista</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link rel="stylesheet" type="text/css"  href="estilo.css" />
     </head>
     <body id="body">
-	<label id="titulo">Futebolista</label>
+	<header id="header">
+       
+        
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    	
+                
+<div class="navbar-collapse collapse">							
+					<div class="menu">
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation"><a href="login.html">Login</a></li>
+							<li role="presentation"><a href="cadastro.html">Cadastro</a></li>
+							<li role="presentation"><a href="bolao.html">Bolão</a></li>
+							<li role="presentation"><a href="novidades.html">Novidades</a></li>
+							<li role="presentation"><a href="faleconosco.html" >Fale conosco</a></li>						
+						</ul>
+					</div>
+				</div>	
+ 
+</script>
+</head>
+
+            	<label id="titulo">Futebolista</label>
 		<div id="descricao">
 		<p>O projeto foi criado com o intuito de reunir pessoas que gostam do futebol para compartilhar assuntos, conhecer pessoas, combinar jogos...</p>
-
+			
 		<p>Faça seu cadastro e se junte a nossa comunidade!</p>
 		</div>
-
-		<div id="login" >
-
-			<label id="loginInput">Usuario:</label><input id="nome" name="nome" type="text"><div id="valNome infCadastro"></div>
-			<label >Senha:</label><input id="senhaLogin" name="senhaLogin" type="text"><div id="valSenhaLogin infLogin"></div>
-			<input style="padding: 5px; cursor:pointer; height:27px; width:68px; margin-top: 10px;" type="button" name="enviar" value="Entrar">
-
+        
+		<div id="login" > 
+			
+			<label id="loginInput">Usuario:</label><input id="nome" name="nome" type="text" style="background-color:blue;"><div id="valNome infCadastro"></div>
+			
+			<label >Senha:</label><input id="senhaLogin" name="senhaLogin" type="password" style="background-color:blue;"><div id="valSenhaLogin infLogin"></div>			
+			
+			<input style="padding: 6px; cursor:pointer; height:36px; width:72px; margin-top: 12px;" type="button"  name="enviar" value="Entrar">		
+			
 				<div id="link">
-					<label cursor="pointer" >Ainda não é membro? <b style="cursor:pointer; color:greenyellow;"> Cadastre-se!</b></label>
-					<label style="cursor:pointer;">Esqueceu a senha?</label>
+					<label cursor="pointer" >Ainda não é membro? <a href="Cadastro.html" style="color:green; cursor:pointer;"> Cadastre-se!<a></label> 
+					<label style="color:green; cursor:pointer;">Esqueceu a senha?</label>
 				</div>
-
+		
 		</div>
-
-
-
+     
+	 <body background="c9.jpg">
+	
     </body>
 </html>

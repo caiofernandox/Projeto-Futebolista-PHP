@@ -18,17 +18,16 @@
     border-radius: 10px;
     color: white;
 }
-#cadastro select{
-	height: 26px;
-    display: block;
-    width: 252px;
-}
 input{
-
+	
     height: 26px;
     display: block;
     width: 252px;
 }
+select {
+height: 26px;
+ width: 252px;
+
 #infCadastro{
 	display:block;
 	position:relative;
@@ -71,6 +70,6 @@ margin: 10% 0 0 266px;
     color: white;
     width: auto;
     height: auto;
-    display: block;
+    display: block;	
 
 }
