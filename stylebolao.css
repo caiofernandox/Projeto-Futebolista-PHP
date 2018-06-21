@@ -1,13 +1,36 @@
-﻿td{
-text-align:center;
-padding:10px;
+td{
+    padding:10px;
 }
 
 table{
-width:100%;
+    text-align:center;
+    width:100%;
+    padding: 3px;
 }
 
 input{
-width:35px;
-font-size: 13px;
+    background-color: #f5f5f5;
+    width:35px;
+    font-size: 13px;
 }
+
+body{ 
+    text-align:center;
+    background: url("c1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.x{
+    background: black;
+    opacity: 0.7;
+}
+
+select{
+    color: white;
+    width:400px;  
+    overflow:hidden;
+    background-color: #999999;
+}
+
