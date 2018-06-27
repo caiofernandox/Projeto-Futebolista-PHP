@@ -7,76 +7,75 @@
     </head>
     <body id="body">
 	<label id="titulo">Cadastro</label>
-        <form  action="recebeDados.php" method="GET" id="cadastro" >
-			<label>Nome:</label><input id="nome" name="nome" type="text"><div id="valNome infCadastro"></div>
+        <form  action="recebeDados.php" method="POST" id="cadastro" >
+			<label>Nome:</label><input id="nome" name="nome" type="text">
 
-			<label>E-mail:</label><input id="email"name="email" type="text"><div id="valEmail infCadastro"></div>
+			<label>E-mail:</label><input id="email" name="email" type="text">
+			<label>Data de nascimento:</label><input id="dataNascimento" name="dataNascimento" type="date">
 
-			<label>Data de nascimento:</label><input id="dataNascimento"name="dataNascimento" type="date"><div id="valDataNasc infCadastro"></div>
-
-			<label>Cidade</label><input id="cidade" name="cidade" type="text"><div id="valCidade infCadastro"></div>
+			<label>Cidade</label><input id="cidade" name="cidade" type="text">
 
 			<label>Estado</label>
 				<select id="estado" name="Estado">
 									<option value="ac">Acre</option>
 									<option value="al">Alagoas</option>
 									<option value="am">Amazonas</option>
-									<option value="ap">Amap·</option>
+									<option value="ap">Amap√°</option>
 									<option value="ba">Bahia</option>
-									<option value="ce">Cear·</option>
+									<option value="ce">Cear√°</option>
 									<option value="df">Distrito Federal</option>
-									<option value="es">EspÌrito Santo</option>
-									<option value="go">Goi·s</option>
-									<option value="ma">Maranh„o</option>
+									<option value="es">Esp√≠rito Santo</option>
+									<option value="go">Goi√°s</option>
+									<option value="ma">Maranh√£o</option>
 									<option value="mt">Mato Grosso</option>
 									<option value="ms">Mato Grosso do Sul</option>
 									<option value="mg">Minas Gerais</option>
-									<option value="pa">Par·</option>
-									<option value="pb">ParaÌba</option>
-									<option value="pr">Paran·</option>
+									<option value="pa">Par√°</option>
+									<option value="pb">Para√≠ba</option>
+									<option value="pr">Paran√°</option>
 									<option value="pe">Pernambuco</option>
-									<option value="pi">PiauÌ</option>
+									<option value="pi">Piau√≠</option>
 									<option value="rj">Rio de Janeiro</option>
 									<option value="rn">Rio Grande do Norte</option>
-									<option value="ro">RondÙnia</option>
+									<option value="ro">Rond√¥nia</option>
 									<option value="rs">Rio Grande do Sul</option>
 									<option value="rr">Roraima</option>
 									<option value="sc">Santa Catarina</option>
 									<option value="se">Sergipe</option>
-									<option value="sp">S„o Paulo</option>
+									<option value="sp">S√£o Paulo</option>
 									<option value="to">Tocantins</option>
 				</select>
 						<label>Time:</label>
 				<select id="times" name="times">
 						<option value="ABC"> ABC </option>
-						<option value="AME"> AmÈrica-MG </option>
-						<option value=""> AtlÈtico-GO </option>
-						<option value=""> AtlÈtico-MG </option>
-						<option value=""> AtlÈtico-PR </option>
-						<option value=""> AvaÌ </option>
+						<option value="AME"> Am√©rica-MG </option>
+						<option value=""> Atl√©tico-GO </option>
+						<option value=""> Atl√©tico-MG </option>
+						<option value=""> Atl√©tico-PR </option>
+						<option value=""> Ava√≠ </option>
 						<option value=""> Bahia </option>
 						<option value=""> Bangu </option>
-						<option value=""> Boca J˙nior </option>
+						<option value=""> Boca J√∫nior </option>
 						<option value=""> Barcelona </option>
 						<option value=""> Botafogo </option>
-						<option value=""> Cear· </option>
+						<option value=""> Cear√° </option>
 						<option value=""> Corinthians </option>
 						<option value=""> Coritiba </option>
 						<option value=""> Cruzeiro </option>
-						<option value=""> Crici˙ma </option>
+						<option value=""> Crici√∫ma </option>
 						<option value=""> CSA </option>
 						<option value=""> Figueirense </option>
 						<option value=""> Flamengo </option>
 						<option value=""> Fluminense </option>
 						<option	value=""> Fortaleza </option>
-						<option value=""> Goi·s </option>
-						<option value=""> GrÍmio </option>
+						<option value=""> Goi√°s </option>
+						<option value=""> Gr√™mio </option>
 						<option value=""> Guarani </option>
 						<option value=""> Internacional </option>
 						<option value=""> Juventude </option>
-						<option value=""> N·utico </option>
+						<option value=""> N√°utico </option>
 						<option value=""> Palmeiras </option>
-						<option value=""> Paran· </option>
+						<option value=""> Paran√° </option>
 						<option value=""> Paysandu </option>
 						<option value=""> Ponte Preta </option>
 						<option value=""> Portuguesa </option>
@@ -84,20 +83,20 @@
 						<option value=""> Remo </option>
 						<option value=""> Santa Cruz </option>
 						<option value=""> Santos </option>
-						<option value=""> S„o Caetano </option>
-						<option value=""> S„o Paulo </option>
+						<option value=""> S√£o Caetano </option>
+						<option value=""> S√£o Paulo </option>
 						<option value=""> Sport </option>
 						<option value=""> Vasco </option>
 						<option value=""> Vila Nova-GO </option>
-						<option value=""> VitÛria </option>
+						<option value=""> Vit√≥ria </option>
 					</select>
-			<div id="valUf infCadastro"></div>
+		
 
 			<label>Senha:</label><input id="senha" name="senha" type="password">
 
 			<div id="valSenha infCadastro"></div>
 
-			<label>Confirmar Senha:</label><input id="confirmarSenha" name="confirmarSenha" type="password"><div id="valConfSenha infCadastro"></div>
+			<label>Confirmar Senha:</label><input id="confirmarSenha" name="confirmarSenha" type="password">
 
 			<input style="padding: 5px; cursor: pointer; height: 27px; width: 68px;margin: 10px 0 0 184px;" type="submit" name="enviar" value="Enviar">
 		</form>
