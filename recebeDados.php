@@ -8,44 +8,20 @@
 			 $senha = $_POST["senha"];
 			 $confirmarSenha = $_POST["confirmarSenha"];
 			 $erro = FALSE;
-			echo '$nome';
-			if($nome == "" || strlen($nome)< 5){
-					echo 'Nome invalido';
-			};
-			//validar time
-				if($time == "" || strlen($time)< 5){
-					echo 'time invalido';
-				};
-				//validar email
-			if($email == "" || strlen($email)< 5){
-					echo 'email invalido';
-				}else{
-						if(strstr($email)){
-						echo 'email correto';
-						}
-					}
-					//validar data de nascimento
-				if(dataNascimento == "" || strlen(dataNascimento)< 5){
-					echo 'data de nascimento invalido';
-				};
-				//validar cidade
-				if(cidade == "" || strlen(cidade)< 5){
-					echo 'cidade invalido';
-				};
-				//validar estado
-				if(estado == "" || strlen(estado)< 5){
-					echo 'estado invalido';
-				};
-				//validar senha
-				if(senha == "" || strlen(senha)< 5 ){
-					echo 'senha deve conter 5 caracteres';
-				};
-				//validar confirmar Senha
-				if(senha === confirmarSenha ){
-					echo 'As senhas devem ser iguais';
-				};
-			}
-			 if(!$erro){
-				 echo 'Todos os dados foram digitados corretamente! <br>';
-				 }
-			?>
+
+	$conexao = mysql_connect("localhost","root");
+		if (!$conexao)	
+		die ("Erro de conexão com localhost, o seguinte erro ocorreu -> ".mysql_error());
+
+//conectando com a tabela do banco de dados
+	$banco = mysql_select_db("usuario",$conexao);
+		if (!$banco)
+		die ("Erro de conexão com banco de dados, o seguinte erro ocorreu -> ".mysql_error());
+
+	$query = "INSERT INTO `usuario` ( `nome` , `time` , `email` , `dataNascimento` , `estado` , `cidade` , `senha` ) 
+		VALUES ('$nome', `$time` , `$email` , `$dataNascimento` , `$estado` , `$cidade` , `$senha`)";
+
+mysql_query($query,$conexao);
+
+echo "Seu cadastro foi realizado com sucesso!<br>Agradecemos a atenção.";
+?>
