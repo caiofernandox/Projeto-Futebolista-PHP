@@ -11,9 +11,9 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `nivel` INT(1) UNSIGNED NOT NULL DEFAULT '1',
   `ativo` BOOL NOT NULL DEFAULT '1',
   `cadastro` DATETIME NOT NULL , 
-  `dataNasc` INT(8),
-  `cidade` VARCHAR(20),
-  `UF` CHAR(2),
+  `dataNasc` INT(8) NOT NULL,
+  `cidade` VARCHAR(20) NOT NULL,
+  `UF` CHAR(2) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `usuario` (`usuario`),
   KEY `nivel` (`nivel`)
